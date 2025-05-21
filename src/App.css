@@ -1,0 +1,138 @@
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #121212 0%, #232d2e 100%);
+  color: #e0e0e0;
+  font-family: 'Segoe UI', 'SegoeUI', Arial, sans-serif;
+  margin: 0;
+  padding: 32px 0 0 0;
+  min-height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+#root {
+  min-height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #56ffd7;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 2.3rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-shadow: 0 2px 24px #56ffd733, 0 1px 1px #101c16;
+}
+
+p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 12px 0;
+  color: #e0e0e0;
+}
+
+strong {
+  color: #56ffd7;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+button {
+  background: linear-gradient(90deg, #232d2e 0%, #232931 70%, #56ffd7 100%);
+  color: #e0e0e0;
+  border: 1.5px solid #232d2e;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 7px 0 0 0;
+  box-shadow: 0 3px 16px 0 #56ffd71c;
+  transition: 
+    background 0.2s, 
+    border-color 0.2s,
+    color 0.2s,
+    box-shadow 0.21s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+button svg {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  fill: #56ffd7;
+  transition: fill 0.2s;
+}
+
+.generate-btn svg{
+  fill: #fff
+}
+
+button:hover {
+  background: linear-gradient(90deg, #56ffd7 0%, #232d2e 100%);
+  color: #121212;
+  border-color: #56ffd7;
+  box-shadow: 0 6px 20px 0 #56ffd73d;
+}
+
+button:hover svg {
+  fill: #121212;
+}
+
+.card, .beautiful-card, .main-card {
+  background: rgba(26, 26, 32, 0.99);
+  border: 1.5px solid #232931;
+  border-radius: 15px;
+  padding: 28px 36px;
+  margin: 28px auto;
+  max-width: 520px;
+  box-shadow: 0 6px 32px 0 #56ffd71a, 0 1.5px 10px #101c1611;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover, .beautiful-card:hover, .main-card:hover {
+  box-shadow: 0 12px 40px 0 #56ffd730, 0 2.5px 14px #191f1d22;
+}
+
+@media (max-width: 700px) {
+  .card, .beautiful-card, .main-card {
+    padding: 18px 4vw;
+    max-width: 96vw;
+  }
+  h1 {
+    font-size: 1.22rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: #232d2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #56ffd7;
+  border-radius: 4px;
+}
